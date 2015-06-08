@@ -1,0 +1,17 @@
+Alex Bailey
+
+E1: Git Research
+1. git init initializes a new git repository
+2. git add stages changed files to be committed while git commit actually commits the changes with a message
+3. Staged files are prepared to be committed but not yet locked in and can still be changed. Committed files are now included in the history of the repository
+4. git commit -am will add and commit all modified files
+5. git reset unstages files, git reset <commit hash> <filename> will revert that file to its state in that commit
+6. Commit messages will make searching through the versions looking for a specific change much easier
+7. To just look at the previous commit, git checkout <commit hash>, but to revert to that version and remove all subsequent commits, git reset --hard <commit hash>
+8. :q will quit vi
+
+E2: GitHub Research
+1. git is managed locally while GitHub stores the versions remotely. GitHub cannot exist without git, but git can exist without GitHub
+2. GitHub is easy to post open source code, free for public repositories, and very popular for programmers.
+3. Git push commits the local repository to the remote repository
+4. Git pull fetches and merges from the remote repository. Git fetch just gets the remote repository without altering the local files and git merge changes the local files
