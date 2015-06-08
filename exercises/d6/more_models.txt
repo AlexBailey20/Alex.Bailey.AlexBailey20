@@ -1,0 +1,59 @@
+1. Views: Home, log-in, account settings, item page, check out, search page, account creation
+
+2.
+Item names (string)
+Item prices (string/int)
+Item types (string)
+User name (string)
+User purchase history ([items])
+User shipping/billing address (string)
+Shopping Cart contents ([items])
+Account user-name (string)
+Account password (string)
+Account settings (various)
+
+3.
+A user creates an account with a user-name and a password -C
+A user updates settings in the account -U
+A user adds/changes items in the shopping cart -U
+A user searches for items -R
+A user can delete his/her account -D
+Shopping carts hold items -U
+Items can change prices or types -U
+Items can be added -C
+Items can be removed -D
+
+4.
+User: name (string), user-name (string), password (string), name (string), address (string),purchase history ([items]), shopping cart
+Shopping Cart: items, user
+Items: name (string), price (float), type (string)
+
+5.
+Users have many items, items have many users
+Users have one shopping cart, shopping carts have one user (combined into user)
+Items have many shopping carts, shopping carts have many items
+
+6.
+
+User Table:
+
+ID | user-name | password | name | address |
+1  |  A_Bailey |  12345   | Alex | 120...   
+
+Item Table:
+
+ID |    Name   |   Price  |        Type         |
+1  |  Battery  |   12.96  | Batteries and Bulbs |
+
+Purchase-History Join Table
+
+ID | user_id | item_id
+1  |   1     |  4
+
+Shopping-Cart Join Table
+
+ID | user_id | item_id
+1  |   6     |  2
+
+
+These Join Tables give that user 1 has purchased item 4 (and item 4 has been purchased by user 1) and user 6 has item 2 in his/her shopping cart (and item 2 is currently in the shopping cart of user 6)

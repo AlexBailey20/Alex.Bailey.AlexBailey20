@@ -1,0 +1,10 @@
+E1: Active Quiz
+
+1. A collection of information organized in a way that it can easily be accessed and understood
+2. A database table is a collection of related information, usually about a certain object or model. The database is made up of database tables, best visualized as Excel charts
+3. id|tweet(content)|user_id
+   4 | "#yolo #swag"| 1
+
+4. Models and resources allow us to visualize and plan the structure of our app to make actual coding significantly easier and clearer
+5. Active Record is the M in MVC, or the model, which represents data and logic. It stores data from the controller that is displayed in the view.
+6. Database tables store information about specific resources (like a User or a Tweet) and are stored by the Active Record
