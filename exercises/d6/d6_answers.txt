@@ -15,3 +15,17 @@ E2: GitHub Research
 2. GitHub is easy to post open source code, free for public repositories, and very popular for programmers.
 3. Git push commits the local repository to the remote repository
 4. Git pull fetches and merges from the remote repository. Git fetch just gets the remote repository without altering the local files and git merge changes the local files
+
+E4: What's the internet again?
+1. A request is sent from the client to the server
+2. The client, usually the browser on the local computer, makes the request
+3. The request follows a path to the physical servers, and the address it follows on the internet is the IP address acquired from the DNS
+4. The server then processes the request and sends out a server response
+5. The server response could be the content of the page (HTML, JSON, etc.) or it could be an error message if there was an issue with the request.
+6. The browser will then take the server response and output it for the user
+
+E5: Ruby Rocks
+1. "404 There isn't a GitHub Pages site here."
+2. The specific GitHub page, iexperience.github.io/exercises/ruby_rocks is not one that is included in the server
+3. The first 4  means that the error was on the client, in this case attempting to access an invalid URL. The 0 means it was a general syntax error, and the second 4 just means its the 4th kind of the 40x errors
+4. This just means that nobody has created that specific page. Ruby can still rock.
