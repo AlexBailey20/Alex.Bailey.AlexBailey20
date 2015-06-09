@@ -1,0 +1,10 @@
+users/edit/id to edit username and password UsersController with update method (also create to make an account)
+users/edit/id to edit settings for a user UsersController with update method
+items to search through the items ItemsController with index method
+user/delete to delete the account UsersController with delete method
+Shopping_Carts/new to add an item to a cart Shopping_CartsController with create method
+Shopping_Carts/delete to delete a shopping cart or remove an item Shopping_CartsController with delete method
+item/edit/id to change price or type of an item ItemsController with update method
+item/new to add a new item ItemsController with create method
+item/delete to remove an item ItemsController with delete method
+
