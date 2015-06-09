@@ -24,7 +24,7 @@ Items can be added -C
 Items can be removed -D
 
 4.
-User: name (string), user-name (string), password (string), name (string), address (string),purchase history ([items]), shopping cart
+User: name (string), user-name (string), password (string), address (string),purchase history ([items]), shopping cart
 Shopping Cart: items, user
 Items: name (string), price (float), type (string)
 

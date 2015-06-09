@@ -1,0 +1,14 @@
+E2: Active Review
+
+.all (class method) returns all instances of the class in an array
+.first (class method) returns the first instance of the class
+.new (class method) creates (but does not save) a new instance of the class
+.find (class method) searches the database for the id (or other parameter) entered into the method and returns that instance
+.find_by (class method) searches for specific conditions and returns the first such instance
+.where (class method) similar to find_by but returns all mathcing instances
+.save (instance method) saves new instances to the database
+.update_attributes (instance method) changes the attributes of that instance
+.destroy (instance method) removes that instance from the database
+
+.find takes id numbers where .find_by takes other attributes
+.where returns all matching instances while .find_by only returns the first
