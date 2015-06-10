@@ -1,0 +1,35 @@
+<% require 'time' 
+%>
+<h1> Petitions </h1>
+
+<ol>
+<% @petitions.each do |petition| %>
+<li>
+<ul>
+<li>
+<%= petition["title"] %>
+</li>
+<li>
+<%= petition["body"] %>
+</li>
+<li>
+<%= petition["url"] %>
+</li>
+<li>
+<%= Time.at(petition["deadline"]) %>
+</li>
+<li>
+<%= petition["status"] %>
+</li>
+<li>
+<%= Time.at(petition["created"]) %>
+</li>
+<li>
+<%= petition["signatureCount"] %>
+</li>
+<%= link_to 'Show', '/petitions/' + petition["id"].to_s %>
+</li>
+</ul>
+</li>
+<% end %>
+</ol>

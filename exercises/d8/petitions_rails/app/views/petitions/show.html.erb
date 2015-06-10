@@ -1,0 +1,11 @@
+<% require 'time' 
+%>
+<h1> <%= @petition["title"] %> </h1>
+
+
+<%= @petition["body"] %>
+<%= @petition["url"] %>
+<%= Time.at(@petition["deadline"]) %>
+<%= @petition["status"] %>
+<%= Time.at(@petition["created"]) %>
+<%= @petition["signatureCount"] %>
