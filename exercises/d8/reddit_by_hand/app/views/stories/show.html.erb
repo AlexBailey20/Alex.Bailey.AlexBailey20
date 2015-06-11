@@ -1,0 +1,14 @@
+<h1>
+<%= @story.title %>
+</h1>
+
+<p>
+<%= @story.body %>
+</p>
+
+<p>
+<%= "Posted in #{Category.find(@story.category_id).name} by #{User.find(@story.user_id).user_name}" %>
+</p>
+
+
+<%= link_to 'Back', "/stories" %>

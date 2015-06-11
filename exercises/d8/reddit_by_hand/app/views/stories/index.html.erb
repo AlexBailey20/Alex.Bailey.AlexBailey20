@@ -1,0 +1,13 @@
+<h1> Story Index </h1>
+<p>
+<ol>
+<% @stories.each do |story| %>
+<li>
+	<%="#{story.title} posted in #{Category.find(story.category_id).name} by #{User.find(story.user_id).user_name}" %>
+	<%= link_to 'Show', "/stories/#{story.id}" %>
+	</li>
+	<% end %>
+	</ol>
+</p>
+
+<%= link_to 'New Story', '/stories/new' %>

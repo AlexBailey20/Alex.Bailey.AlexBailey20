@@ -1,0 +1,16 @@
+<h1> Make a new story! </h1>
+<%= form_for Story.new do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label :body %>:
+  <%= f.text_field :body %><br />
+
+  <%= f.label :user_id %>:
+  <%= f.number_field :user_id %><br />
+
+  <%= f.label :category_id %>:
+  <%= f.number_field :category_id %><br />
+
+  <%= f.submit %>
+<% end %>
