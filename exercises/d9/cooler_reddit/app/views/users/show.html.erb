@@ -1,0 +1,10 @@
+<h1><%= "Stories by #{@user.user_name}" %></h1>
+<ol>
+<% @user.stories.each do |story| %>
+	<li>
+	<%=link_to story.title, "/stories/#{story.id}"%> <br />
+	<%= "Posted in " %>
+	<%= link_to story.category.title , "/categories/#{story.category_id}" %>
+	</li>
+<%end%>
+</ol>

@@ -1,0 +1,11 @@
+<h1><%= @category.title %></h1>
+<ol>
+<% @stories.each do |story| %>
+<li>
+	<%=link_to story.title, "/stories/#{story.id}"%> <br />
+	<%= "Posted by "%>
+	<%= link_to story.user.user_name , "/users/#{story.user_id}" %>
+	</li>
+	<%end%>
+	</ol>
+<%= link_to 'Back to All Stories', "/stories" %>
